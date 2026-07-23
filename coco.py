@@ -17,12 +17,14 @@ class COCOData:
         self.image_to_captions = {}
         self.caption_to_image = {}
         self.caption_text = {}
+        self.image_url = {}
 
         for image in coco_data["images"]:
             image_id = image["id"]
             if image_id in valid_image_ids:
                 self.image_ids.append(image_id)
                 self.image_to_captions[image_id] = []
+                self.image_url[image_id] = image.get("coco_url") or image.get("flickr_url")
 
         for annotation in coco_data["annotations"]:
             image_id = annotation["image_id"]

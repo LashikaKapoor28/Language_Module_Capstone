@@ -23,6 +23,8 @@ def generate_triples(
     seed=None,
 ):
     """
+    Generate a list of triples (caption_id, true_image_id, confusor_image_id) for training.
+
     confusors are now chosen by
     semi-hard negative mining: for each image, draw a random pool of
     pool_size other images, rank them by cosine similarity (in raw
