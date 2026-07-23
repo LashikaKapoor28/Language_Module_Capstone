@@ -8,7 +8,7 @@ train.py (Sriram) - Training loop + gradient descent steps
 database.py (Nihanth) - Matrix search on DB and image loader  
 main.py (Whoever done) -  Actual runnable final script  
 
-Also add data to the .gitignore
+Trained weights are in data/W_embed.npy (512 to 200). Re-run train.py to regenerate
 
 Libraries:
 numpy
