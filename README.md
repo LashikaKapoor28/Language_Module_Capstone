@@ -16,3 +16,5 @@ mygrad
 gensim
 requests
 pillow
+torch
+torchvision
