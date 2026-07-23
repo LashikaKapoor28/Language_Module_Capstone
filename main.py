@@ -36,7 +36,7 @@ def load_app():
 st.title("Semantic Image Search")
 glove, idfs, db = load_app()
 
-query = st.text_input("Query", placeholder="horses on a beach")
+query = st.text_input("Query")
 k = st.slider("Top-k", 1, 12, 5)
 
 if st.button("Search") and query.strip():
