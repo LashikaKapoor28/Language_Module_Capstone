@@ -1,6 +1,6 @@
 import mygrad as mg
 from mynn.layers.dense import dense
-from mynn.initializers.glorot_normal import glorot_normal
+from mynn.initializers import glorot_normal
 class Model:
     def __init__(self, d_full=512, d_embed=200):
         self.dense = dense(d_full, d_embed, weight_initializer=glorot_normal, bias=False)
