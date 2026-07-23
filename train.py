@@ -26,7 +26,7 @@ _PUNCT = str.maketrans({c: " " for c in string.punctuation})
 def tokenize(text):
     return text.lower().translate(_PUNCT).split()
 
-# temp data functions
+# temp data functions, replace when everyone done
 
 def load_raw():
     with Path(get_data_path("captions_train2014.json")).open() as f:
